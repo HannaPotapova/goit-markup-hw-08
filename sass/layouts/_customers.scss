@@ -1,0 +1,36 @@
+.company {
+    display: flex;
+
+    &__item {
+        width: 170px;
+        height: 92px;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    &__icon {
+        fill: currentColor;
+    }
+}
+
+.company__logo {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #AFB1B8;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        border: 1px solid #2196F3;
+        color: #2196F3;
+    }
+}
