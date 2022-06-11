@@ -1,18 +1,21 @@
 // utils
 @import './utils/variables';
 @import './utils/visually-hidden';
+@import './utils/mixin';
 
 // base styles
 @import './base/common';
 @import './base/reset';
 
 // components
+@import './components/container';
 @import './components/button';
 @import './components/logo';
 @import './components/modal-form';
 @import './components/socials';
 @import './components/footer-form';
 @import './components/button-portfolio';
+@import './components/menu';
 
 // layuots
 @import './layouts/header';

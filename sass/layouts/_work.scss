@@ -1,3 +1,10 @@
+.section-work {
+    
+    @include mq (not-desktop) {
+            display: none;
+        }
+}
+
 .work {
     display: flex;
 }
