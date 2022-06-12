@@ -7,18 +7,37 @@
     padding-bottom: 60px;
 
     &--start {
-        margin-right: 70px;
+        margin-bottom: 60px;
+        @include mq(tablet-only) {
+            margin-right: 165px;
+        }
+        @include mq(desktop) {
+            margin-right: 70px;
+            margin-bottom: 0px;
+        }
     }
 
     &--bottom {
         color: var(--white-text-color);
         font-style: inherit;
-        margin-bottom: 9px;
+        margin-bottom: 8px;
+        @include mq(desktop) {
+            margin-bottom: 9px;
+        }
     }
 
     &__container {
-        // display: flex;
+        @include mq(not-desktop) {
+            text-align: center;
+        }
         align-items: baseline;
+        
+
+        @include mq(tablet) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 
     &__logo {

@@ -496,7 +496,33 @@ img {
 }
 
 .send {
-  margin-left: 93px;
+  margin-top: 60px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .send {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .send {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .send {
+    margin-left: 93px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .send__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .send__icon {
@@ -505,7 +531,7 @@ img {
 }
 
 .send__btn {
-  margin-left: 12px;
+  margin-top: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 28px;
@@ -516,8 +542,18 @@ img {
           align-items: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .send__btn {
+    margin-left: 12px;
+    margin-top: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .send__input {
-  width: 358px;
+  width: 450px;
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -526,6 +562,12 @@ img {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
+}
+
+@media screen and (min-width: 1200px) {
+  .send__input {
+    width: 358px;
+  }
 }
 
 .send__input::-webkit-input-placeholder {
@@ -1245,19 +1287,57 @@ img {
 }
 
 .page-footer--start {
-  margin-right: 70px;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .page-footer--start {
+    margin-right: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-footer--start {
+    margin-right: 70px;
+    margin-bottom: 0px;
+  }
 }
 
 .page-footer--bottom {
   color: var(--white-text-color);
   font-style: inherit;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+  .page-footer--bottom {
+    margin-bottom: 9px;
+  }
 }
 
 .page-footer__container {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .page-footer__container {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .page-footer__logo {
