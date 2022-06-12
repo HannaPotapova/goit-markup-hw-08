@@ -45,7 +45,7 @@
         margin-bottom: 16px;
     }
     
-    @include mq(tablet) {
+    @include mq(tablet-only) {
         flex-basis: calc((100% - 30px) / 2);
     }
 
@@ -54,7 +54,7 @@
     }
 }
 
-@include mq(mobile) {
+@include mq(mobile-only) {
     .card:not(:last-child) {
         margin-bottom: 30px;
     }
@@ -64,10 +64,7 @@
     .card:nth-child(2n+1) {
         margin-right: 30px;
     }
-}
-
-@include mq(tablet-only) {
-    .card:nth-child(-n+2) {
+    .card:nth-child(-n + 2) {
         margin-bottom: 30px;
     }
 }

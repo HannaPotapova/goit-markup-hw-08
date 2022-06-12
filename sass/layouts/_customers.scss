@@ -1,13 +1,19 @@
 .company {
-    // display: flex;
-
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    
     &__item {
-        width: 170px;
         height: 92px;
-    }
-
-    &__item:not(:last-child) {
-        margin-right: 30px;
+        width: 210px;
+        
+        @include mq(tablet-only) {
+            width: 226px;
+        }
+        @include mq(desktop) {
+            width: 170px;
+        }
     }
 
     &__icon {
