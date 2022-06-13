@@ -1,9 +1,19 @@
 .flex-btn {
-    // display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    @include mq(mobile-only) {
+        justify-content: flex-start;
+        align-items:center;
+        margin-bottom: 40px;
+    }
     margin-bottom: 50px;
     justify-content: center;
 }
-
+@include mq(mobile-only) {
+    .flex-btn .item:nth-child(-n + 3) {
+        margin-bottom: 15px;
+    }
+}
 .flex-btn .item:not(:last-child) {
     margin-right: 8px;
 }
