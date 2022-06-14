@@ -39,7 +39,7 @@
 }
 
 .send__input {
-    width: 450px;
+    width: 100%;
     @include mq(desktop) {
     width: 358px;
     }
